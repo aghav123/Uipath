@@ -1,5 +1,7 @@
-- task: UiPathDeploy@4
+- task: UiPathPack@4
   inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'project.json'
+    outputType: 'Process'
     orchestratorConnection: 'connectionbetorcheandazure'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'UnAttended_Automations'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
