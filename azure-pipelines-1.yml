@@ -5,3 +5,8 @@
     outputType: 'Process'
     orchestratorConnection: 'connectionbetorcheandazure'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'connectionbetorcheandazure'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'UnAttended_Automations'
