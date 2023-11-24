@@ -17,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: UiPathRunJob@4
+  inputs:
+    orchestratorConnection: 'AzureUipath'
+    processName: 'BPA_Demo1'
+    folderName: 'karan'
+    jobType: 'TestAutomation'
+    user: 'izd01\installuser'
