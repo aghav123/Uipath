@@ -1,8 +1,15 @@
-- task: UiPathRunJob@4
-  inputs:
-    orchestratorConnection: 'connectionbetorcheandazure'
-    processName: 'Demo2'
-    parametersFilePath: 'project.json'
-    folderName: 'karan'
-    strategy: 'Specific'
-    robotsIds: 'IZD01\12784'
+jobs:
+- job: UiPathJob
+  pool:
+    vmImage: 'windows-latest'
+
+  steps:
+  - task: UiPathRunJob@4
+    inputs:
+      orchestratorConnection: 'connectionbetorcheandazure'
+      processName: 'Demo2'
+      parametersFilePath: 'project.json'
+      folderName: 'karan'
+      strategy: 'Specific'
+      robotsIds: 'IZD01\12784'
+
