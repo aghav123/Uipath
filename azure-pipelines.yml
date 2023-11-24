@@ -1,0 +1,8 @@
+- task: UiPathRunJob@4
+  inputs:
+    orchestratorConnection: 'connectionbetorcheandazure'
+    processName: 'Demo2'
+    parametersFilePath: 'project.json'
+    folderName: 'karan'
+    strategy: 'Specific'
+    robotsIds: 'IZD01\12784'
