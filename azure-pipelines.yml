@@ -23,4 +23,4 @@ steps:
     processName: 'BPA_Demo1'
     folderName: 'karan'
     jobType: 'TestAutomation'
-    user: 'izd01\installuser'
+    user: 'izd01\12784'
