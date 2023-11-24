@@ -1,8 +1,0 @@
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: 'project.json'
-    outputType: 'Process'
-    orchestratorConnection: 'connectionbetorcheandazure'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-
