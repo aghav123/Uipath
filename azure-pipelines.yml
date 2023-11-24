@@ -1,9 +1,5 @@
-- task: UiPathRunJob@4
+- task: UiPathDeploy@4
   inputs:
     orchestratorConnection: 'connectionbetorcheandazure'
-    processName: 'BPA_Demo1'
-    parametersFilePath: 'project.json'
-    priority: 'High'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'karan'
-    user: 'Karan CS'
-    machine: 'IZD01\12784'
